@@ -4,251 +4,260 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IUI'18 Demo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="IUI'18 のデモのために作成したウェブページです．" />
-	<meta name="keywords" content="poster, svf, visualization, interactive, social viewpoint finder, opengl, shader" />
-	<meta name="author" content="Riku Takano" />
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IUI'18 Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IUI'18 のデモのために作成したウェブページです．" />
+  <meta name="keywords" content="poster, svf, visualization, interactive, social viewpoint finder, opengl, shader" />
+  <meta name="author" content="Riku Takano" />
 
   <!-- 
-	//////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+  FREE HTML5 TEMPLATE 
+  DESIGNED & DEVELOPED by FREEHTML5.CO
+    
+  Website:    http://freehtml5.co/
+  Email:      info@freehtml5.co
+  Twitter:    http://twitter.com/fh5co
+  Facebook:     https://www.facebook.com/fh5co
 
-	//////////////////////////////////////////////////////
-	 -->
+  //////////////////////////////////////////////////////
+   -->
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content=""/>
+  <meta property="og:image" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:site_name" content=""/>
+  <meta property="og:description" content=""/>
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="favicon.ico">
 
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="bootstrapCSS/css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="bootstrapCSS/css/icomoon.css">
-	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="bootstrapCSS/css/simple-line-icons.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="bootstrapCSS/css/magnific-popup.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="bootstrapCSS/css/bootstrap.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="bootstrapCSS/css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="bootstrapCSS/css/icomoon.css">
+  <!-- Simple Line Icons -->
+  <link rel="stylesheet" href="bootstrapCSS/css/simple-line-icons.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="bootstrapCSS/css/magnific-popup.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="bootstrapCSS/css/bootstrap.css">
 
-	<!-- 
-	Default Theme Style 
-	You can change the style.css (default color purple) to one of these styles
-	
-	1. pink.css
-	2. blue.css
-	3. turquoise.css
-	4. orange.css
-	5. lightblue.css
-	6. brown.css
-	7. green.css
+  <!-- 
+  Default Theme Style 
+  You can change the style.css (default color purple) to one of these styles
+  
+  1. pink.css
+  2. blue.css
+  3. turquoise.css
+  4. orange.css
+  5. lightblue.css
+  6. brown.css
+  7. green.css
 
-	-->
-	<link rel="stylesheet" href="bootstrapCSS/css/style.css">
+  -->
+  <link rel="stylesheet" href="bootstrapCSS/css/style.css">
 
-	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
-	<link rel="stylesheet" id="theme-switch" href="bootstrapCSS/css/style.css">
-	<!-- End demo purposes only -->
-
-
-
-	<!-- Modernizr JS -->
-	<script src="bootstrapCSS/js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="bootstrapCSS/js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-
-	<body>
-	<header role="banner" id="fh5co-header">
-			<div class="container">
-				<!-- <div class="row"> -->
-			    <nav class="navbar navbar-default">
-		        <div class="navbar-header">
-		        	<!-- Mobile Toggle Menu Button -->
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		         <a class="navbar-brand" href="index.html">HomePage</a> 
-		        </div>
-		        <div id="navbar" class="navbar-collapse collapse">
-		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-		            <li><a href="#" data-nav-section="profile"><span>Profile</span></a></li>
-		            <li><a href="#" data-nav-section="work"><span>Work</span></a></li>
-		            <li><a href="#" data-nav-section="movie"><span>Movie</span></a></li>
-		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
-		          </ul>
-		        </div>
-			    </nav>
-			  <!-- </div> -->
-		  </div>
-	</header>
-
-	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
-		<div class="gradient"></div>
-		<div class="container">
-			<div class="text-wrap">
-				<div class="text-inner">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<h1 class="to-animate">可視化合宿 2017</h1>
-							<h2 class="to-animate">@八王子のどこか</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slant"></div>
-	</section>
-
-	<section id="fh5co-work" data-section="profile">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Profile</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>東京工業大学 情報理工学院 修士１年<br><a href="https://kwakita.blog/" target="_blank">脇田 建 研究室</a>所属<br>高野 陸</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="fh5co-work" data-section="work">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Work</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<img src="images/visCamp.jpg" width="100%" height="100%">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="fh5co-about" data-section="movie">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Movie</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Social Viewpoint Finder による可視化のデモ．<br>他のデモは<a href="https://vimeo.com/album/4755149">こちら</a></h3>
-							<div class="row watch-video text-center to-animate">
-								<span>Watch the video</span>
-								<!-- <a href="https://vimeo.com/232439098" class="popup-vimeo btn-video"><i class="icon-play2"></i></a> -->
-								<iframe src="https://player.vimeo.com/video/232439098" width="640" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-								<p><a href="https://vimeo.com/232439098">Social Viewpoint Finder (Visualize US political blogs)</a> from <a href="https://vimeo.com/user62243045">Riku Takano</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="fh5co-contact" data-section="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Get In Touch</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>何か質問や指摘などがありましたら，お気軽にご連絡ください．</h3>
-							<h3>email: <a href="mailto:takano.r.aa at m.titech.ac.jp">takano.r.aa [at] m.titech.ac.jp</a></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	<footer id="footer" role="contentinfo">
-		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
-		<div class="container">
-			<div class="">
-				<div class="col-md-12 text-center">
-					<p>Thanks for your coming!</p>
-					
-				</div>
-			</div>
-		</div>
-	</footer>
-	
+  <!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+  <link rel="stylesheet" id="theme-switch" href="bootstrapCSS/css/style.css">
+  <!-- End demo purposes only -->
 
 
-	
-	<!-- jQuery -->
-	<script src="bootstrapCSS/js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="bootstrapCSS/js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="bootstrapCSS/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="bootstrapCSS/js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="bootstrapCSS/js/jquery.stellar.min.js"></script>
-	<!-- Counter -->
-	<script src="bootstrapCSS/js/jquery.countTo.js"></script>
-	<!-- Magnific Popup -->
-	<script src="bootstrapCSS/js/jquery.magnific-popup.min.js"></script>
-	<script src="bootstrapCSS/js/magnific-popup-options.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="bootstrapCSS/js/google_map.js"></script>
 
-	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-	<script src="bootstrapCSS/js/jquery.style.switcher.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});	
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
-	<!-- End demo purposes only -->
+  <!-- Modernizr JS -->
+  <script src="bootstrapCSS/js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="bootstrapCSS/js/respond.min.js"></script>
+  <![endif]-->
 
-	<!-- Main JS (Do not remove) -->
-	<script src="bootstrapCSS/js/main.js"></script>
+  </head>
 
-	</body>
+  <body>
+  <header role="banner" id="fh5co-header">
+      <div class="container">
+        <!-- <div class="row"> -->
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <!-- Mobile Toggle Menu Button -->
+              <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+             <!-- <a class="navbar-brand" href="index.html">HomePage</a>  -->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#" data-nav-section="home"><span>Top</span></a></li>
+                <li><a href="#" data-nav-section="profile"><span>Authors</span></a></li>
+                <li><a href="#" data-nav-section="work"><span>Poster</span></a></li>
+                <li><a href="#" data-nav-section="movie"><span>Video</span></a></li>
+                <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        <!-- </div> -->
+      </div>
+  </header>
+
+  <section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
+    <div class="gradient"></div>
+    <div class="container">
+      <div class="text-wrap">
+        <div class="text-inner">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <!-- <h1 class="to-animate">Fluid UI for HIGH-dimensional Analysis of Social Networks</h1> -->
+              <h1 class="to-animate">Poster's Title</h1>
+              <h2 class="to-animate">
+                ACM IUI'18 Demos and Posters Session<br>
+                Dates: March 7th-11th, 2018<br>
+                Venue: Hitotsubashi Hall,Tokyo, Japan<br>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slant"></div>
+  </section>
+
+  <section id="fh5co-work" data-section="profile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading text-center">
+          <h2 class="to-animate">Authors</h2>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 subtext to-animate">
+              <h3>
+                <a href="https://kwakita.blog/" target="_blank">Ken Wakita</a>, Tokyo Institute of Technology<br>
+                <a href="https://tknrk.github.io/" target="_blank">Riku Takano</a>, Tokyo Institute of Technology
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fh5co-work" data-section="work">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading text-center">
+          <h2 class="to-animate">Poster</h2>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 subtext to-animate">
+              <h3>ポスターはまだ準備できていません．</h3>
+              <img src="images/visCamp.jpg" width="100%" height="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="fh5co-about" data-section="movie">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading text-center">
+          <h2 class="to-animate">Video</h2>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 subtext to-animate">
+              <h3>Social Viewpoint Finder による可視化のデモ．<br>他のデモは<a href="https://vimeo.com/album/4755149">こちら</a></h3>
+              <div class="row watch-video text-center to-animate">
+                <span>Watch the video</span>
+                <!-- <a href="https://vimeo.com/232439098" class="popup-vimeo btn-video"><i class="icon-play2"></i></a> -->
+                <iframe src="https://player.vimeo.com/video/232439098" width="640" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/232439098">Social Viewpoint Finder (Visualize US political blogs)</a> from <a href="https://vimeo.com/user62243045">Riku Takano</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fh5co-contact" data-section="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-heading text-center">
+          <h2 class="to-animate">Get In Touch</h2>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 subtext to-animate">
+              <h3>何か質問や指摘などがありましたら，お気軽にご連絡ください．</h3>
+              <h3>email: <a href="mailto:takano.r.aa at m.titech.ac.jp">takano.r.aa [at] m.titech.ac.jp</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer id="footer" role="contentinfo">
+    <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
+    <div class="container">
+      <div class="">
+        <div class="col-md-12 text-center">
+          <p>Thanks for your coming!</p>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+  
+  <!-- jQuery -->
+  <script src="bootstrapCSS/js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="bootstrapCSS/js/jquery.easing.1.3.js"></script>
+  <!-- Bootstrap -->
+  <script src="bootstrapCSS/js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="bootstrapCSS/js/jquery.waypoints.min.js"></script>
+  <!-- Stellar Parallax -->
+  <script src="bootstrapCSS/js/jquery.stellar.min.js"></script>
+  <!-- Counter -->
+  <script src="bootstrapCSS/js/jquery.countTo.js"></script>
+  <!-- Magnific Popup -->
+  <script src="bootstrapCSS/js/jquery.magnific-popup.min.js"></script>
+  <script src="bootstrapCSS/js/magnific-popup-options.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+  <script src="bootstrapCSS/js/google_map.js"></script>
+
+  <!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+  <script src="bootstrapCSS/js/jquery.style.switcher.js"></script>
+  <script>
+    $(function(){
+      $('#colour-variations ul').styleSwitcher({
+        defaultThemeId: 'theme-switch',
+        hasPreview: false,
+        cookie: {
+                expires: 30,
+                isManagingLoad: true
+            }
+      }); 
+      $('.option-toggle').click(function() {
+        $('#colour-variations').toggleClass('sleep');
+      });
+    });
+  </script>
+  <!-- End demo purposes only -->
+
+  <!-- Main JS (Do not remove) -->
+  <script src="bootstrapCSS/js/main.js"></script>
+
+  </body>
 </html>
 
